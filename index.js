@@ -1,7 +1,10 @@
 function main() {
-  // addHeader(document.body)
-  // const footerParent = document.querySelector(".footer-container")
-  // addFooter(footerParent)
+  const headerParent = document.querySelector(".header-container")
+  addHeader(headerParent)
+  const footerParent = document.querySelector(".footer-container")
+  addFooter(footerParent)
+  const formParent = document.querySelector(".form-section")
+  addForm(formParent)
 }
 
 main()
