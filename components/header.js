@@ -1,16 +1,16 @@
-function addHeader(parentHeader) {
+function addHeader(parentHeader, publicPath = "./public") {
   const headerElement = document.createElement("div")
   headerElement.innerHTML = `
   <header class="header">
-    <img src="./public/marce.svg" class="header__logo">
-    <img src="./public/burger.svg" alt="" class="header__burguer">
+    <img src="${publicPath}/marce.svg" class="header__logo">
+    <img src="${publicPath}/burger.svg" alt="" class="header__burguer">
     <div class="header__nav">
       <a href="" class="header__nav-link">Portfolio</a>
       <a href="" class="header__nav-link">Servicios</a>
       <a href="" class="header__nav-link">Contacto</a>
     </div>
     <div class="header__modal">
-      <img src="./public/closeX.svg" alt="" class="header__modal-close">
+      <img src="${publicPath}/closeX.svg" alt="" class="header__modal-close">
       <nav class="header__modal-nav">
         <a href="" class="header__modal-link">Portfolio</a>
         <a href="" class="header__modal-link">Servicios</a>
