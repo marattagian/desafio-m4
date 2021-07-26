@@ -1,70 +1,62 @@
-/* * {
-  box-sizing: border-box;
+:root {
+  --negro: #141414;
+  --casi-negro: #2c2c2c;
+  --gris: #787878;
+  --gris-claro: #b9b9b9;
+  --casi-blanco: #dbdbdb;
+  --blanco: #fafafa;
+  --primario: #f0ebcc;
+  --secundario: #3d84b8;
+  --exito: #4aa96c;
+  --negativo: #fc6f50;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #000;
-  color: #fff;
-}
-
-.contact-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-}
-
-@media (min-width: 768px) {
-  .contact {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 4.36em;
-  }
-}
-
-.contact__title {
+.title {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-style: normal;
   font-size: 48px;
-  text-align: center;
-  margin: 0;
+  font-weight: bold;
+  line-height: 48px;
 }
 
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 39px;
 }
 
-.contact__form--input {
-  width: 335px;
-  height: 45px;
-  border: none;
-  border-radius: 4px;
-  padding-left: 0.5em;
-  font-size: 1em;
-}
-
-textarea.contact__form--input {
-  height: 113px;
-  padding-top: 1em;
-  font-size: 1em;
+.large {
   font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
 }
 
-.contact__form--label {
-  margin-bottom: 1em;
-  font-size: 12px;
+.large-bold {
   font-family: 'Poppins', sans-serif;
-} */
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.body-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.caption {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+}
