@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  height: 100vh;
+  color: #fff;
+  background-image: url(./public/background-image.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .intro {
+  }
+}
+
+.intro__container--title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.intro__container--subtitle {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.about {
+  height: fit-content;
+  background-color: var(--negro);
+  color: var(--blanco);
+  padding: 55px 1.5em 5em;
+}
+
+.about__personal-image {
+  display: none;
+}
+
+.about__info {
+}
+
+.about__info--title {
+  text-align: center;
+  margin: 0;
+}
+
+.about__info--text {
+  margin-top: 46px;
+  /* margin-top: 1em; */
+}
+
+.services__title {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
