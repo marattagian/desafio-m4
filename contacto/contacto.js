@@ -5,6 +5,8 @@ function main() {
   addFooter(footerParent, "../public")
   const formParent = document.querySelector(".form-section")
   addForm(formParent)
+
+  addSubmitListener(document.querySelector(".contact__form"))
 }
 
 main()

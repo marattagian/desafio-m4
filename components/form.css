@@ -54,11 +54,12 @@ body {
   border-radius: 4px;
   padding-left: 0.5em;
   font-size: 1em;
+  border: 3px solid #2c2c2c;
 }
 
 textarea.contact__form--input {
   height: 113px;
-  padding-top: 1em;
+  padding-top: 0.5em;
   font-size: 1em;
   font-family: 'Poppins', sans-serif;
 }
@@ -67,4 +68,11 @@ textarea.contact__form--input {
   margin-bottom: 1em;
   font-size: 12px;
   font-family: 'Poppins', sans-serif;
+}
+
+.submit-button {
+  margin-top: 60px;
+  background-color: var(--casi-negro);
+  color: var(--casi-blanco);
+  text-align: center;
 }

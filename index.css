@@ -48,6 +48,7 @@ body {
     display: flex;
     padding-bottom: 0;
     gap: 1em;
+    justify-content: center;
   }
 }
 
