@@ -15,7 +15,7 @@ body {
 @media (min-width: 768px) {
   .header__nav {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
   }
 }

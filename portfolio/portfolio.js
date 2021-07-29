@@ -32,26 +32,21 @@ function showCards(jsonData) {
   const data = jsonData.items
   const assets = jsonData.includes.Asset
 
-  data.map(item => {
-    const imageID = item.fields.projectImage.sys.id || " "
-    const result = assets.filter(asset => asset.sys.id == imageID)
+  const result = data.filter(item => item.fields.projectImage)
+  result.map(item => {
+    const fields = item.fields
 
+    const imageID = fields.projectImage.sys.id
+    const image = assets.find(asset => asset.sys.id == imageID)
 
-    if (imageID) {
-      const cardObject = {
-        title: item.fields.title,
-        description: item.fields.description,
-        link: item.fields.link,
-        url: item.fields.url,
-        imageUrl: result[0].fields.file.url,
-      }
-
-      addCard(cardObject)
-    }
+    return addCard({
+      title: fields.title,
+      description: fields.description,
+      url: fields.url,
+      link: fields.link,
+      imageUrl: image.fields.file.url
+    })
   })
-}
-
-async function requestSender() {
 }
 
 main()

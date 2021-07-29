@@ -35,21 +35,20 @@ function showCards(jsonData) {
   const data = jsonData.items
   const assets = jsonData.includes.Asset
 
-  data.map(item => {
-    const imageID = item.fields.logo.sys.id || ""
-    const result = assets.filter(asset => asset.sys.id == imageID)
+  const result = data.filter(item => item.fields.logo)
+  result.map(item => {
+    const fields = item.fields
 
-    if (imageID) {
-      const cardObject = {
-        title: item.fields.title,
-        description: item.fields.description,
-        imageUrl: result[0].fields.file.url,
-      }
+    const imageID = fields.logo.sys.id
+    const image = assets.find(asset => asset.sys.id == imageID)
 
-      return fillCardData(cardObject)
-    }
-
+    return fillCardData({
+      title: fields.title,
+      description: fields.description,
+      imageUrl: image.fields.file.url
+    })
   })
+
 }
 
 
