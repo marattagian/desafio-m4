@@ -1,7 +1,7 @@
 function addHeader(parentHeader, publicPath = "./public") {
   const contactoURL = "https://marattagian.github.io/desafio-m4/contacto/contacto.html"
-  const portfolioURL = "https://marattagian.github.io/desafio-m4/servicios/servicios.html"
-  const serviciosURL = "https://marattagian.github.io/desafio-m4/portfolio/portfolio.html"
+  const portfolioURL = "https://marattagian.github.io/desafio-m4/portfolio/portfolio.html"
+  const serviciosURL = "https://marattagian.github.io/desafio-m4/servicios/servicios.html"
   const headerElement = document.createElement("div")
   headerElement.innerHTML = `
   <header class="header">
