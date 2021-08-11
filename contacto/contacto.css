@@ -4,13 +4,17 @@
   }
 }
 
+body {
+  background-color: #000;
+}
 
 .contact-container {
-  padding-top: 10em;
+  margin-top: 5em;
 }
 
 @media (min-width: 768px) {
   .contact-container {
     padding-top: 2em;
+    margin-top: 0;
   }
 }
