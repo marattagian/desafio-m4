@@ -1,11 +1,12 @@
 function addHeader(parentHeader, publicPath = "./public") {
-  const contactoURL = "https://marattagian.github.io/desafio-m4/contacto/contacto.html"
-  const portfolioURL = "https://marattagian.github.io/desafio-m4/portfolio/portfolio.html"
-  const serviciosURL = "https://marattagian.github.io/desafio-m4/servicios/servicios.html"
+  const homeURL = "https://marattagian.github.io/desafio-m4/"
+  const contactoURL = `${homeURL}contacto/contacto.html`
+  const portfolioURL = `${homeURL}portfolio/portfolio.html`
+  const serviciosURL = `${homeURL}servicios/servicios.html`
   const headerElement = document.createElement("div")
   headerElement.innerHTML = `
   <header class="header">
-    <img src="${publicPath}/marce.svg" class="header__logo">
+    <a href="${homeURL}"><img src="${publicPath}/GianLogo.svg" class="header__logo"></a>
     <img src="${publicPath}/burger.svg" alt="" class="header__burguer">
     <div class="header__nav">
       <a href="${portfolioURL}" class="header__nav-link">Portfolio</a>
